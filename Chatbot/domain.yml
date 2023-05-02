@@ -1,0 +1,94 @@
+version: "3.1"
+
+intents:
+  - greet
+  - study
+  - student
+  - postgraduate
+  - undergraduate
+  - uk
+  - international
+  - applied_yes
+  - applied_no
+  - help
+  - goodbye
+
+
+responses:
+  utter_greet:
+  - text: "Hi there, Welcome to solent University!"
+
+  utter_study:
+  - text: "Are you Looking to study at Solent or You already a solent student:?"
+    buttons:
+      - title: "Looking to study"
+        payload: "Looking to study"
+      - title: "Already a student"
+        payload: "Already a student"
+
+  utter_ask_under_post:
+  - text: "Are you looking to study an undergraduate or a postgraduate?"
+    buttons:
+      - title: "Undergraduate"
+        payload: "Undergraduate Student"
+      - title: "Postgraduate"
+        payload: "Postgraduate Student"
+
+  utter_ask_nationality:
+  - text: "Are you a UK or International Student?"
+    buttons:
+      - title: "UK"
+        payload: "Am a UK student"
+      - title: "international"
+        payload: "Am an international student"
+  utter_ask_application:
+  - text: "Have you already applied to solent?"
+    buttons:
+      - title: "applied_yes"
+        payload: "Already Applied to solent"
+      - title: "applied_no"
+        payload: "Yet to Apply"
+
+  utter_ask_help:
+  - text: "How can we help today? Choose an Option"
+    buttons:
+      - title: "I want an introduction to solent"
+        payload: "I want an introduction to solent - https://www.youtube.com/watch?time_continue=1&v=8My7UETRG8w&feature=emb_logo"
+      - title: "I want to find a course"
+        payload: "I want to find a course - https://www.solent.ac.uk/courses"
+      - title: "I need help with my application"
+        payload: "I need help with my application - https://www.solent.ac.uk/how-to-apply"
+      - title: "I want help finding a home"
+        payload: "I want help finding a home - https://www.solent.ac.uk/accommodation"
+      - title: "I want to chat to a student"
+        payload: "I want to chat to a student"
+      - title: "I need help with finance"
+        payload: "I need help with finance"
+      - title: "I need help with visas"
+        payload: "I need help with visas"
+      - title: "I need country specific information"
+        payload: "I need country specific information"
+      - title: "I need information on English language and study abroad programmes"
+        payload: "I need information on English language and study abroad programmes"
+      - title: "I want to know about moving to the UK"
+        payload: "I want to know about moving to the UK"
+
+  utter_ask_help_1:
+  - text: "How can we help today? Choose an Option"
+    buttons:
+      - title: "I want an introduction to solent"
+        payload: "I want an introduction to solent - https://www.youtube.com/watch?time_continue=1&v=8My7UETRG8w&feature=emb_logo"
+      - title: "I want to find a course"
+        payload: "I want to find a course - https://www.solent.ac.uk/courses"
+      - title: "I need help with my application"
+        payload: "I need help with my application - https://www.solent.ac.uk/how-to-apply"
+      - title: "I want help finding a home"
+        payload: "I want help finding a home - https://www.solent.ac.uk/accommodation"
+
+  utter_goodbye:
+  - text: "Goodbye! Have a nice day."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

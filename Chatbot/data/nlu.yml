@@ -1,0 +1,79 @@
+version: "3.1"
+
+
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey there
+    - Good morning
+    - Good afternoon
+    - Good evening
+
+- intent: study
+  examples: |
+    - I'm looking to study
+    - Interested in studying
+    - Want to pursue a degree
+
+- intent: student
+  examples: |
+    - I'm already a student at Solent
+    - I'm currently studying at Solent
+    - I already go to Solent
+    - I am a current Solent student
+    - I'm enrolled at Solent
+
+- intent: postgraduate
+  examples: |
+    - I want to pursue a postgraduate degree
+    - Interested in postgrad programs
+    - Looking for postgrad options
+
+- intent: undergraduate
+  examples: |
+    - I want to pursue an undergraduate degree
+    - Interested in undergrad programs
+    - Looking for undergrad options
+
+- intent: uk
+  examples: |
+    - I'm from the UK
+    - British
+    - England
+    - Scotland
+    - Wales
+    - Northern Ireland
+
+- intent: international
+  examples: |
+    - I'm an international student
+    - Not from the UK
+    - From another country
+    - Outside of the UK
+
+- intent: applied_yes
+  examples: |
+    - Yes, I have applied
+    - I have already applied
+    - Applied already
+
+- intent: applied_no
+  examples: |
+    - No, I have not applied
+    - I have not applied yet
+    - Not applied
+
+- intent: help
+  examples: |
+    - Can you help me?
+    - I need some help
+    - Can you assist me?
+    - What can you do for me?
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later

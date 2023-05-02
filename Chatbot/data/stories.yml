@@ -1,0 +1,115 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_study
+  - intent: study
+  - action: utter_ask_under_post
+  - intent: postgraduate
+  - action: utter_ask_nationality
+  - intent: uk
+  - action: utter_ask_application
+  - intent: applied_yes
+  - action: utter_ask_help
+
+- story: happy path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_study
+  - intent: study
+  - action: utter_ask_under_post
+  - intent: postgraduate
+  - action: utter_ask_nationality
+  - intent: uk
+  - action: utter_ask_application
+  - intent: applied_no
+  - action: utter_ask_help
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_study
+  - intent: study
+  - action: utter_ask_under_post
+  - intent: postgraduate
+  - action: utter_ask_nationality
+  - intent: international
+  - action: utter_ask_application
+  - intent: applied_yes
+  - action: utter_ask_help
+
+- story: sad path 12
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_study
+  - intent: study
+  - action: utter_ask_under_post
+  - intent: postgraduate
+  - action: utter_ask_nationality
+  - intent: international
+  - action: utter_ask_application
+  - intent: applied_no
+  - action: utter_ask_help
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_study
+  - intent: study
+  - action: utter_ask_under_post
+  - intent: undergraduate
+  - action: utter_ask_nationality
+  - intent: uk
+  - action: utter_ask_application
+  - intent: applied_yes
+  - action: utter_ask_help
+
+- story: sad path 22
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_study
+  - intent: study
+  - action: utter_ask_under_post
+  - intent: undergraduate
+  - action: utter_ask_nationality
+  - intent: uk
+  - action: utter_ask_application
+  - intent: applied_no
+  - action: utter_ask_help
+
+- story: sad path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_study
+  - intent: study
+  - action: utter_ask_under_post
+  - intent: undergraduate
+  - action: utter_ask_nationality
+  - intent: international
+  - action: utter_ask_application
+  - intent: applied_yes
+  - action: utter_ask_help
+
+- story: sad path 32
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_study
+  - intent: study
+  - action: utter_ask_under_post
+  - intent: undergraduate
+  - action: utter_ask_nationality
+  - intent: international
+  - action: utter_ask_application
+  - intent: applied_no
+  - action: utter_ask_help

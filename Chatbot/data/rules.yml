@@ -1,0 +1,19 @@
+version: "3.1"
+
+rules:
+
+- rule: Greet anytime the user greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_study
+
+- rule: Goodbye the user
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Already a student
+  steps:
+  - intent: student
+  - action: utter_ask_help_1
